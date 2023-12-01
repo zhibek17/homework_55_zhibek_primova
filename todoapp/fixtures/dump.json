@@ -1,0 +1,47 @@
+[
+{
+  "model": "todoapp.task",
+  "pk": 1,
+  "fields": {
+    "description": "aslkdfjla",
+    "status": "new",
+    "due_date": null
+  }
+},
+{
+  "model": "todoapp.task",
+  "pk": 2,
+  "fields": {
+    "description": "фырвалофрывл",
+    "status": "new",
+    "due_date": "2023-11-08"
+  }
+},
+{
+  "model": "todoapp.task",
+  "pk": 3,
+  "fields": {
+    "description": "fv",
+    "status": "in_progress",
+    "due_date": "2023-10-03"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$gtTkCCKyRA7hvre32nJq7h$La1s2Q042Y7lerYKV4F4hIdHj7RGlRt0gFGePD7lW9s=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-11-28T12:34:14.899Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

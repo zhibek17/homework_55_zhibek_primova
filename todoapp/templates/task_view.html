@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+    <style>
+        div{
+            text-align: center;
+        }
+        h1{
+            color: darkred;
+            padding: 40px;
+        }
+    </style>
+    <div>
+        <h1>Подробнее о задаче</h1>
+        <p><strong>ID:</strong> {{ task.id }}</p>
+        <p><strong>Описание:</strong> {{ task.description }}</p>
+        <p><strong>Полное описание:</strong> {{ task.more_description }}</p>
+        <p><strong>Статус:</strong> {{ task.status }}</p>
+        <p><strong>Выполнить до:</strong> {{ task.due_date }}</p>
+        <a href="{% url 'task_list' %}">На главную</a>
+    </div>
+
+{% endblock %}
