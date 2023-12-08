@@ -1,10 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% csrf_token %}
+            <div class="row mb-3">
+                <label for="{{ form.description.id_for_label }}" class="col-sm-3 col-form-label text-end">Описание:</label>
+                <div class="col-sm-9">
+                    {{ form.description }}
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="{{ form.more_description.id_for_label }}" class="col-sm-3 col-form-label text-end">Полное описание:</label>
+                <div class="col-sm-9">
+                    {{ form.more_description }}
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="{{ form.status.id_for_label }}" class="col-sm-3 col-form-label text-end">Статус:</label>
+                <div class="col-sm-9">
+                    {{ form.status }}
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="{{ form.due_date.id_for_label }}" class="col-sm-3 col-form-label text-end">Выполнить до:</label>
+                <div class="col-sm-9">
+                    {{ form.due_date }}
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-9 offset-sm-3">
+                    <button type="submit" class="btn btn-danger">Сохранить</button>
+                </div>
+            </div>
